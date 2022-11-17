@@ -68,17 +68,17 @@ const questions = [
 const data = {
 	name: chalk.bold.green('             Julio Espadas'),
 	handle: chalk.white('@jespadas'),
-	work: `${chalk.white('Application Consultant at')} ${chalk
-		.hex('#2b82b2')
-		.bold('Capgemini Group')}`,
-	// twitter: chalk.gray('https://twitter.com/') + chalk.cyan('misteranmol'),
+	work: `${chalk.white('Application Consultant at')} ${chalk.blue(
+		'Capgemini'
+	)}`,
 	github: chalk.gray('https://github.com/') + chalk.green('jespadas'),
-	linkedin: chalk.gray('https://linkedin.com/in/') + chalk.blue('julioespadas'),
+	linkedin:
+		chalk.gray('https://linkedin.com/in/') +
+		chalk.hex('#2b82b2').bold('julioespadas'),
 	web: chalk.cyan('https://julioespadas.com'),
 	npx: chalk.red('npx') + ' ' + chalk.white('jespadas'),
 
 	labelWork: chalk.white.bold('       Work:'),
-	// labelTwitter: chalk.white.bold('    Twitter:'),
 	labelGitHub: chalk.white.bold('     GitHub:'),
 	labelLinkedIn: chalk.white.bold('   LinkedIn:'),
 	labelWeb: chalk.white.bold('        Web:'),
@@ -91,23 +91,20 @@ const me = boxen(
 		``,
 		`${data.labelWork}  ${data.work}`,
 		``,
-		`${data.labelTwitter}  ${data.twitter}`,
 		`${data.labelGitHub}  ${data.github}`,
 		`${data.labelLinkedIn}  ${data.linkedin}`,
 		`${data.labelWeb}  ${data.web}`,
 		``,
 		`${data.labelCard}  ${data.npx}`,
 		``,
+		`${chalk.italic('Higly motivated person with three years of experience')}`,
 		`${chalk.italic(
-			'I have a degree in marketing and three years of experience as a project manager.'
+			'as a project manager and almost three years as web developer.'
 		)}`,
 		`${chalk.italic(
-			'My willingness to continue learning allowed me to obtain a second degree in application development with which I have three years of experience.'
+			'The experience of working internationally allows me to adapt quickly.'
 		)}`,
-		`${chalk.italic(
-			'The experience of working internationally with multicultural teams and in other languages allows me to adapt quickly to the project I am involved in.'
-		)}`,
-		`${chalk.italic('I am bilingual in French, English and Spanish.')}`,
+		`${chalk.italic('I speak French, English and Spanish.')}`,
 	].join('\n'),
 	{
 		margin: 1,
