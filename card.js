@@ -25,7 +25,7 @@ const questions = [
 			{
 				name: `Send me an ${chalk.green.bold('email')}?`,
 				value: () => {
-					open('mailto:contact@julioespadas.com');
+					open('mailto:contact@julioespadas.com?subject=Hello there');
 					console.log('\nDone, see you soon at inbox.\n');
 				},
 			},
@@ -75,8 +75,8 @@ const data = {
 	linkedin:
 		chalk.gray('https://linkedin.com/in/') +
 		chalk.hex('#2b82b2').bold('julioespadas'),
-	web: chalk.cyan('https://julioespadas.com'),
-	npx: chalk.red('npx') + ' ' + chalk.white('jespadas'),
+	web: chalk.white.bgGreen.bold('https://julioespadas.com'),
+	npx: chalk.redBright('npx') + ' ' + chalk.white('jespadas'),
 
 	labelWork: chalk.white.bold('       Work:'),
 	labelGitHub: chalk.white.bold('     GitHub:'),
